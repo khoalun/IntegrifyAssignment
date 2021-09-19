@@ -19,8 +19,6 @@ const UserDetails = () => {
     };
     fetchData();
   }, [userId]);
-  // const [error, setError] = React.useState(false);
-  // const [loading, setLoading] = React.useState(false);
     console.log("userId", userId);  
     let history = useHistory()
     const backToHomepage = () => {

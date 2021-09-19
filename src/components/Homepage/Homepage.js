@@ -10,12 +10,10 @@ const Homepage = () => {
       const result = await axios.get("https://jsonplaceholder.typicode.com/users");
 
         setUserData(result.data);
-        console.log('userData',userData )
     };
 
     fetchData();
   }, []);
-    console.log("userData", userData);
   return (
     <div className="container">
       <ul>
